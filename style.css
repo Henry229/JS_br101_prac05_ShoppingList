@@ -19,6 +19,9 @@ button {
   margin: auto;
   background: #f1f0f7;
   border-radius: 20px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .header {
@@ -39,7 +42,7 @@ button {
 }
 
 ul {
-  height: 63rem;
+  height: 40rem;
   overflow-y: auto; /* list가 길어지면 scroll-bar가 생기도록*/
   list-style: none;
   padding: 0;
@@ -93,4 +96,13 @@ ul {
 .footerButton {
   width: 5rem;
   height: 5rem;
+  font-size: 3.5rem;
+  border: none;
+  outline: none;
+  margin-top: 0.5rem;
+  transition: transform 300ms ease-in;
+}
+
+.footerButton:hover {
+  transform: scale(1.2);
 }
